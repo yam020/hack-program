@@ -1,7 +1,7 @@
 # hack-program
 HW for EEEB 4050 
 
-### Use the decision maker to do randonm decision 
+### Use the decision maker to do random decision 
 
 decision_maker -h
 
