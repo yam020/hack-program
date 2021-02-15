@@ -18,7 +18,7 @@ optional arguments:
 ##### Data science project - randomly sample quotes from a csv file
 
 ##### Reference for the dataset: 
-<br>Title: Proposing Contextually Relevant Quotes for Images
+Title: Proposing Contextually Relevant Quotes for Images
 <br>Authors: Shivali Goel, Rishi Madhok, Shweta Garg
 <br>In proceedings of: 40th European Conference on Information Retrieval
 <br>Year: 2018
