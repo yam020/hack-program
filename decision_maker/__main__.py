@@ -38,13 +38,19 @@ def parse_arguments():
 		help="print the random amount of fortune"
 	)
 
+	parser.add_argument(
+		"--quotes", 
+		action="store_true",
+		help="print the random quotes"
+	)
+
 	# returns arg dict-like object contianing user arguments
 	args = parser.parse_args()
 
 	#error check 
-	if sum([args.yesno, args.do, args.color, args.fortune]) > 1:
+	if sum([args.yesno, args.do, args.color, args.fortune, args.quotes]) > 1:
 		raise SystemExit(
-			"Only one of 'yesno', 'do', 'color' or 'fortune' at a time.")
+			"Only one of 'yesno', 'do', 'color' or 'fortune' or 'quotes' at a time.")
 	return args
 
 def run_program():
@@ -60,3 +66,5 @@ def run_program():
 		decision("color")
 	if args.fortune:
 		decision("fortune")
+	if args.quotes:
+		decision("quotes")

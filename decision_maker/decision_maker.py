@@ -10,7 +10,13 @@ Decision maker
 """
 
 import random 
+import pandas as pd
 
+# URL path to a CSV of famous quotes 
+URL = "https://raw.githubusercontent.com/yam020/hack-program/main/data/quotes.csv"
+
+# Read the csv file
+df_quotes = pd.read_csv(URL)
 
 def decision(arg):
 	"""
@@ -25,15 +31,17 @@ def decision(arg):
 	arg_lower= arg.lower()
 	# make the random decision based on the input
 	if arg_lower == "yesno":
-		Yesorno()
+		yesorno()
 	if arg_lower == "do":
-		WhatshoudIdo()
+		whatshoudIdo()
 	if arg_lower == "color":
-		Color()
+		color()
 	if arg_lower == "fortune":
-		Fortune()
+		fortune()
+	if arg_lower == "quotes":
+		quotes()
 
-def Yesorno():
+def yesorno():
 	"""
 	Pick yes or no randomly
 
@@ -48,7 +56,7 @@ def Yesorno():
 	ynlist = ["Yes", "No"]
 	print(random.choice(ynlist))
 
-def WhatshoudIdo():
+def whatshoudIdo():
 	"""
 	Pick one acitvity randomly
 
@@ -67,7 +75,7 @@ def WhatshoudIdo():
 	]
 	print(random.choice(todolist))
 
-def Color():
+def color():
 	"""
 	Pick a color randomly
 
@@ -87,7 +95,7 @@ def Color():
 	]
 	print(random.choice(colorlist))
 
-def Fortune():
+def fortune():
 	"""
 	Pick a fortune randomly
 
@@ -101,6 +109,22 @@ def Fortune():
 	"""
 	print("$"+str(random.randint(0,10)*100))
 
+def quotes():
+	"""
+	Pick a quote from the dataset randomly
+
+    Parameters
+    ----------
+    No parameter needed 
+
+    Print
+    ------
+    String: One quote
+	"""
+	row = df_quotes.sample()
+	say = row.iat[0,1]
+	print(say)
+
 
 if __name__ == "__main__":
     # ask user to input the category of the decision
@@ -109,13 +133,17 @@ if __name__ == "__main__":
 	arg_lower= arg.lower()
 	# make the random decision based on the input
 	if arg_lower == "yesno":
-		Yesorno()
+		yesorno()
 	if arg_lower == "do":
-		WhatshoudIdo()
+		whatshoudIdo()
 	if arg_lower == "color":
-		Color()
+		color()
 	if arg_lower == "fortune":
-		Fortune()
+		fortune()
+	if arg_lower == "quotes":
+		quotes()
+	else:
+		print("Please enter 'yesno', 'do', 'color', 'fortune', or 'quotes'")
 	
 
 
