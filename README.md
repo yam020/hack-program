@@ -8,8 +8,18 @@ decision_maker -h
 usage: decision_maker [-h] [--yesno] [--do] [--color] [--fortune]
 
 optional arguments:
- <br> -h, --help show this help message and exit
- <br> --yesno print the random yes/no choice
- <br> --do print the random activity to do for the day
- <br> --color print the random color choice
- <br> --fortune print the random amount of fortune
+ <br> -h, --help  show this help message and exit
+ <br> --yesno     print the random yes/no choice
+ <br> --do        print the random activity to do for the day
+ <br> --color     print the random color choice
+ <br> --fortune   print the random amount of fortune
+ <br> --quotes    print the random quotes
+
+##### Data science project - randomly sample quotes from a csv file
+
+##### Reference for the dataset: 
+<br>Title: Proposing Contextually Relevant Quotes for Images
+<br>Authors: Shivali Goel, Rishi Madhok, Shweta Garg
+<br>In proceedings of: 40th European Conference on Information Retrieval
+<br>Year: 2018
+<br>The dataset is reduced by YM for this homework. 
