@@ -7,6 +7,7 @@ Decision maker
 2. What should I do today? 
 3. Fortune 
 4. What color? 
+5. Quote of the day
 """
 
 import random 
