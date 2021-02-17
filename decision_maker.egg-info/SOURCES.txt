@@ -1,7 +1,0 @@
-README.md
-setup.py
-decision_maker.egg-info/PKG-INFO
-decision_maker.egg-info/SOURCES.txt
-decision_maker.egg-info/dependency_links.txt
-decision_maker.egg-info/entry_points.txt
-decision_maker.egg-info/top_level.txt

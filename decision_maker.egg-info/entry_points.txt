@@ -1,3 +1,0 @@
-[console_scripts]
-decision_maker = decision_maker.__main__:run_program
-
