@@ -5,7 +5,7 @@ HW for EEEB 4050
 
 decision_maker -h
 
-usage: decision_maker [-h] [--yesno] [--do] [--color] [--fortune]
+usage: decision_maker [-h] [--yesno] [--do] [--color] [--fortune] [--quotes]
 
 optional arguments:
  <br> -h, --help  show this help message and exit
